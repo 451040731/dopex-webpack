@@ -1,0 +1,197 @@
+/* * @Author: LCJ  * @Date: 2019-09-12 10:00:10    */
+/*news*/
+.header{
+    background: none;
+}
+.content{
+    padding-top: 0;
+}
+.news-banner{
+    padding: 156px 0 170px;
+    background-color: #f0f6f0;
+}
+.news-banner .img{
+    width: 580px;
+}
+.news-banner .img img{
+    width: 100%;
+}
+.news-banner .text{
+    width: 562px;
+    text-align: left;
+}
+.news-banner .text h4{
+    font-size: 60px;
+    color: #494f54;
+    font-weight: bold;
+    line-height: 60px;
+}
+.news-banner .text p{
+    font-size: 18px;
+    color: #494f54;
+    line-height: 24px;
+}
+.list{
+    padding: 100px 0 0;
+}
+.list h4{
+    font-size: 60px;
+    color: #494f54;
+    font-weight: bold;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 130px;
+    text-transform: uppercase;
+}
+.list .wrap{
+    width: 1200px;
+    overflow: hidden;
+}
+.list .wrap ul{
+    width: 1300px;
+}
+.list li{
+    position: relative;
+    width: 384px;
+    float: left;
+    margin-right: 24px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+.list li:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.list li .img img{
+    width: 100%;
+}
+.list li .text h5{
+    font-size: 24px;
+    font-weight: bold;
+    color: #494f54;
+    line-height: 24px;
+    margin: 20px 0 10px;
+    font-style: italic;
+    text-align: left;
+}
+.list li .text a{
+    display: none;
+}
+.list li .text .desc{
+    display: none;
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    width: 384px;
+    height: 250px;
+    z-index: 10;
+    overflow-y: auto;
+    background: rgba(255,255,255,0.8)
+}
+.list li .text .desc p{
+    font-size: 18px;
+    color: #494f54;
+    line-height: 24px;
+}
+.list li:hover .text .desc{
+    display: block;
+}
+@media screen and (max-width: 768px) { 
+    .content{
+        padding-top: 66px;
+    }
+    .news-banner{
+        position: relative;
+        padding: 40px 0 60px;
+    }
+    .news-banner .w1200,.list .w1200{
+        width: 100%;
+    }
+    .news-banner .img{
+        width: 66%;
+    }
+    .news-banner .text{
+        width: 100%;
+    }
+    .news-banner .text h4{
+        position: absolute;
+        top: 126px;
+        right: 20px;
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .news-banner .text p{
+        padding: 20px;
+        font-size: 18px;
+    }
+    .list{
+        padding: 50px 0 0;
+    }
+    .list li{
+        float: none;
+        width: 100%;
+    }
+    .list .wrap,.list .wrap ul{
+        width: 100%;
+    }
+    .list h4{
+        font-size: 28px;
+        line-height: 40px;
+        width: 80%;
+        text-align: left;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    .list li .text h5{
+        padding: 0 10px;
+        font-size: 18px;
+        margin: 10px 0 0;
+    }
+    .list li .text .desc{
+        display: block;
+        position: static;
+        width: 100%;
+        height: 80px;
+        overflow-y: hidden;
+        overflow: hidden;
+        -webkit-line-clamp: 3; 
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+    }
+    .list li .text .desc p{
+        font-size: 16px;
+    }
+    .list li .text a{
+        display: block;
+        font-size: 14px;
+        color: #bababa;
+        padding: 0 10px;
+        margin-top: 10px;
+        text-align: right;
+    }
+    .list li:hover{
+        box-shadow: none;
+    }
+    .list li .text .desc.cur{
+        height: auto;
+        overflow: auto;
+        -webkit-line-clamp: inherit;
+        -webkit-box-orient: initial;
+        display: block;
+    }
+}
+@media screen and (max-width: 320px) { 
+    .news-banner{
+        padding-bottom: 20px;
+    }
+    .news-banner .text h4{
+        top: 102px;
+    }
+    .list{
+        padding: 30px 0;
+    }
+    .list h4{
+        margin-bottom: 30px;
+    }
+}

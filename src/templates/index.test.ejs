@@ -1,0 +1,15 @@
+<!-- 导航链接模块 -->
+<% for (var i = 0; i < index.length; i++) {%>
+	<% if(index[i].index == 0 || index[i].index == 1) { %>
+	<div nav-link="<%= index[i].link%>" href="javascript:;" class="product fl">
+		<span><%= index[i].key%></span>
+		<div class="sub-nav">
+			<% for (var j = 0; j < index[i].value.length; j++) {%>
+				<a href="<%= index[i].value[j].link%>"><%= index[i].value[j].key%></a>
+			<% } %>
+		</div>
+	</div>
+	<% } else { %>
+		<a nav-link="<%= index[i].link%>" href="<%= index[i].link%>"><%= index[i].key%></a>
+	<% } %>
+<% } %>

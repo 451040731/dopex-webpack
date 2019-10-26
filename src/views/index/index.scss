@@ -1,0 +1,394 @@
+/* * @Author: LCJ  * @Date: 2019-09-12 10:00:27    */
+/*index*/
+.inbanner{
+	height: 838px;
+	background: url('../../common/assets/images/index/banner.jpg') no-repeat center top;
+}
+.products{
+	padding: 100px 0 54px;
+	background-color: #faf8f8;
+}
+.products .title{
+	position: relative;
+	height: 105px;
+	font-size: 60px;
+	font-weight: bold;
+	color: #212121;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 54px;
+}
+.products .title::after{
+	position: absolute;
+	content: '';
+	display: block;
+	top: 100px;
+	left: 50%;
+	margin-left: -40px;
+	width: 80px;
+	height: 5px;
+	background-color: #219783;
+}
+.products .list li{
+	width: 392px;
+	float: left;
+	margin-right: 12px;
+	background-color: #fff;
+	-webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+	overflow: hidden;
+}
+.products .list li:last-child{
+	margin-right: 0;
+}
+.products .list li:hover{
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.products .list li .img{
+	position: relative;
+	height: 540px;
+}
+.products .list li .img .desc,.products .list li .img .detail{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+.products .list li .img .detail{
+	opacity: 0;
+}
+.products .list li:hover .pic{
+	opacity: 0;
+}
+.products .list li:hover .desc{
+	opacity: 0;
+	-webkit-animation: fadeOut .3s ease-out 0s 1 normal forwards;
+    animation: fadeOut .3s ease-out 0s 1 normal forwards;
+}
+.products .list li:hover .detail{
+	-webkit-animation: fadeIn .5s ease-out .3s 1 normal forwards;
+    animation: fadeIn .5s ease-out .3s 1 normal forwards;
+}
+
+.products .list li .text{
+	padding: 45px 0 34px;
+	text-align: center;
+}
+.products .list li .text h3{
+	font-size: 30px;
+	color: #000;
+	line-height: 50px;
+}
+.products .list li .text a{
+	font-size: 18px;
+	color: #1d9783;
+	position: relative;
+	z-index: 30;
+}
+.products .list li .text a:hover{
+	text-decoration: underline;
+}
+.products .list li .small{
+	display: none;
+}
+.technology{
+	padding: 230px 0 220px;
+	background-color: #deecf1;
+}
+.technology .title{
+	width: 960px;
+}
+.technology .title h3{
+	position: relative;
+	font-size: 60px;
+    font-weight: bold;
+    color: #212121;
+    line-height: 130px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    word-break: break-all;
+	z-index: 100;
+}
+.technology .img{
+	margin-top: 70px;
+}
+.technology .title p{
+	font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 36px;
+}
+.technology .img img{
+	margin-right: 108px;
+}
+.technology .link{
+	position: absolute;
+	left: 76px;
+	bottom: -12px;
+}
+.technology .link span{ 
+	display: block;
+	float: left;
+	width: 161px;
+	height: 38px;
+	margin-right: 30px;
+	background: url('../../common/assets/images/index/technology-icon.png') no-repeat;
+}
+.technology .link a{
+	 float: left;
+}
+.technology .exhale {
+    position: absolute;
+    right: -60px;
+    bottom: -150px;
+    z-index: 20;
+}
+.brand{
+	padding-bottom: 50px;
+	background-color: #f0f6f0;
+	max-height: 734px;
+}
+.brand .bgf{ 
+	background-color: #fff;
+}
+.brand .img{
+	width: 53%;
+}
+.brand .img img{
+	width: 100%;
+}
+.brand .text{
+	width: 47%;
+	padding: 6% 0 0 6%;
+}
+.brand .text .t-wrap{
+	width: 544px;
+}
+.brand .text h3{
+	font-size: 60px;
+	font-weight: bold;
+	color: #212121;
+	margin-bottom: 6%;
+}
+.brand .text p{
+	font-size: 18px;
+	color: #494f54;
+	line-height: 36px;
+}
+.brand .text a{
+	margin-top: 80px;
+	display: inline-block;
+	float: right;
+	font-size: 18px;
+	color: #1d9783;
+}
+@media screen and (max-width: 768px) { 
+	.content{ 
+		overflow: hidden;
+	}
+	.inbanner{
+		width: 100%;
+		height: 532px;
+		background: url('../../common/assets/images/index/banner-m.jpg') no-repeat center top;
+		background-size: 100%;
+	}
+	.products{
+		padding: 60px 0 0;
+		background-color: #f6f9f6;
+	}
+	.products .w1200,.technology .w1200{
+		width: 100%;
+	}
+	.products .title{
+		height: 36px;
+		margin-bottom: 30px;
+		font-size: 34px;
+		text-align: left;
+		text-indent: 20px;
+	}
+	.products .title::after{
+		display: none;
+	}
+	.products .list{
+		width: 100%;
+	}
+	.products .list li{
+		float: none;
+		width: 100%;
+	}
+	.technology{
+		padding: 60px 20px 140px;
+		background-color: #f6f9f6;
+	}
+	.technology .title{
+		width: 100%;
+	}
+	.technology .title h3{
+		font-size: 36px;
+		line-height: 44px;
+	}
+	.technology .link{
+		position: static;
+		margin-bottom: 40px;
+	}
+	.technology .link span{
+		width: 100px;
+		height: 24px;
+		background-size: 100%;
+	}
+	.technology .link a{
+		position: absolute;
+		top: 50px;
+	}
+	.technology .img{
+		width: 100%;
+		margin-top: 30px;
+	}
+	.technology .img img{
+		width: 100%;
+	}
+	.technology .title p{
+		width: 65%;
+		font-size: 18px;
+	}
+	.technology .exhale{
+		right: -230px;
+	}
+	.technology .exhale img{
+		width: 60%;
+	}
+	.brand{
+		max-height: none;
+		padding-bottom: 0;
+	}
+	.brand .img{
+		float: none;
+		width: 100%;
+	}
+	.brand .text{
+		position: relative;
+		float: none;
+		width: 100%;
+		padding: 50px 30px;
+		background-color: #f6f9f6;
+	}
+	.brand .text h3{
+		font-size: 36px;
+		margin-bottom: 30px;
+	}
+	.brand .text .t-wrap{
+		width: 100%;
+	}
+	.brand .text a{
+		position: absolute;
+		top: 65px;
+		right: 30px;
+		margin-top: 0;
+	}
+	.products .list li .img{
+		height: 330px;
+	}
+	.products .list li .text{
+		padding: 30px 0;
+	}
+	.products .list li:hover{
+		box-shadow: none;
+	}
+	.products .list li .pic,.products .list li .detail{
+		display: none;
+
+	}
+	.products .list li:hover .desc{
+		opacity: 1;
+		-webkit-animation: none;
+		animation: fadeOut none;
+	}
+	.products .list li:hover .detail{
+		-webkit-animation: none;
+		animation: fadeOut none;
+	}
+	.products .list li .small{
+		display: block;
+		padding: 2%;
+		background-color: #f6f9f6;
+	}
+	.products .list li .small .small-list{
+		width: 48%;
+		background-color: #fff;
+		text-align: center;
+		max-height: 300px;
+	}
+	.products .list li .small .small-list img{
+		width: 100%;
+		vertical-align: middle;
+	}
+}
+@media screen and (max-width: 375px) { 
+	.inbanner{
+		height: 480px;
+	}
+	.footer .column .company-info a{
+		background-position: 96px 8px;
+	}
+	.brand .text h3,.technology .title h3,.products .title{
+		font-size: 28px;
+	}
+	.brand .text p,.technology .title p{
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.brand .text a{
+		top: 58px;
+	}
+}
+@media screen and (max-width: 360px) { 
+	.inbanner{
+		height: 462px;
+	}
+}
+@media screen and (max-width: 320px) { 
+	.inbanner{
+		height: 410px;
+	}
+	.footer .column .company-info a{
+		background-position: 66px 8px;
+	}
+	.brand .text h3,.technology .title h3,.products .title{
+		font-size: 24px;
+	}
+	.brand .text p,.technology .title p{
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.brand .text a{
+		top: 58px;
+	}
+	.copyright{
+		font-size: 14px;
+	}
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0, 100px);
+        transform: translate(0,100px)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        -webkit-transform: translate(0, -50px);
+        transform: translate(0,-50px)
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}

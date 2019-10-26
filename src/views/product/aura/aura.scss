@@ -1,0 +1,512 @@
+.pc{
+    display: block;
+}
+.m{
+    display: none;
+}
+.content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.h900{
+    height: 900px;
+}
+.aura-banner img {
+    width:100%;
+    vertical-align: top;
+}
+.aura .w1184{
+    width: 1184px;
+    margin: 0 auto;
+}
+.aura .text h3{
+    font-size: 47px;
+    font-weight: bold;
+    color: #21917e;
+    line-height: 40px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.aura .text p{
+    position: relative;
+    font-size: 22px;
+    color: #545353;
+    line-height: 46px;
+}
+.aura .text p::before{
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #21917e;
+}
+.aura1{
+    padding-top: 300px;
+    background: url('../../../common/assets/images/aura/aura1-bg.jpg') no-repeat center top;
+}
+.aura1 .text{
+    position: relative;
+    width: 646px;
+    z-index: 2;
+}
+.aura1 .img{
+    position: absolute;
+    right: 0;
+    top: -224px;
+    z-index: 1;
+}
+.aura1 .pic{
+    width: 602px;
+    height: 757px;
+}
+.aura1 .pic img{
+    position: absolute;
+}
+.aura1 .pic .pic1{
+    right: 253px;
+    bottom: 304px;
+    z-index: 2;
+    transition: all 2s ease;
+}
+.aura1 .img .pic2{
+    right: 222px;
+    bottom: 264px;
+    z-index: 1;
+    transition: all 2s ease;
+}
+.aura1 .pic .pic3{
+    right: 10px;
+    bottom: -20px;
+    z-index: 3;
+}
+.aura1.animate .pic .pic1{
+    right: 422px;
+    bottom: 552px;
+}
+.aura1.animate .img .pic2{
+    right: 282px;
+    bottom: 358px;
+}
+.aura2{
+    background: url('../../../common/assets/images/aura/aura2-bg.jpg') no-repeat center top;
+}
+.aura2 .text{
+    width: 636px;
+    margin-top: 340px;
+}
+.aura2 .text p{
+    color: #fff;
+}
+.aura2 .img{
+    width: 324px;
+    margin-left: 80px;
+}
+.aura3{
+    padding-top: 106px;
+    background: url('../../../common/assets/images/aura/aura3-bg.jpg') no-repeat center top;
+}
+.aura3 .text{
+    width: 584px;
+    margin-top: 60px;
+}
+.aura3 .text p::before{
+    display: none;
+}
+.aura3 .text h4{
+    font-size: 26px;
+    font-weight: bold;
+    color: #21917e;
+    margin: 50px 0 40px;
+}
+.aura3 .text ul li{
+    position: relative;
+    float: left;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    margin-right: 38px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.aura3 .text ul li span{
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 76px;
+    height: 76px;
+    display: block;
+    background: url('../../../common/assets/images/aura/aura-switch.png') no-repeat;
+    z-index: 2;
+}
+.aura3 .text ul li.l1 span{
+    background-position: 0 0;
+}
+.aura3 .text ul li.l2 span{
+    background-position: -113px 0;
+}
+.aura3 .text ul li.l3 span{
+    background-position: -229px 0;
+}
+.aura3 .text ul li.l4 span{
+    background-position: -346px -1px;
+}
+.aura3 .text ul li.cur,.aura3 .text ul li:hover{
+    opacity: 1;
+}
+.aura3 .text ul li.cur::before,.aura3 .text ul li:hover::before{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background-color: #21917e;
+    z-index: 1;
+}
+.aura3 .img{
+    width: 170px;
+    margin-right: 220px;
+}
+.aura3 .img img{
+    display: none;
+}
+.aura3 .img img:first-child{
+    display: block;
+}
+  
+.aura1.animate .text,.aura3.animate .text{
+    animation: fadeInLeft 1s ease-in-out both;
+    -webkit-animation: fadeInLeft 1s ease-in-out both;
+}
+.aura2.animate .text{
+    animation: fadeInRight 1s ease-in-out both;
+    -webkit-animation: fadeInRight 1s ease-in-out both;
+}
+
+@-webkit-keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+@-webkit-keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+  
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    
+    .pc{
+        display: none;
+    }
+    .m{
+        display: block;
+    }
+    .h900 {
+        height: 800px;
+    }
+    .aura .w1184 {
+        width:100%;
+        padding:0 30px;
+        box-sizing: border-box;
+    }
+    .aura1,.aura3 {
+        padding-top: 54px;
+    }
+    .aura1 .text,.aura2 .text {
+        width:100%;
+    }
+    .aura .text h3 {
+        font-size: 26px;
+        margin-bottom: 22px;
+        line-height: 42px;
+    }
+    .aura .text p {
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 32px;
+    }
+    .aura .text p::before {
+        left: 0px;
+        top: 12px;
+    }
+    .aura1 .pic {
+        width: 100%;
+        height: 768px;
+    }
+    .aura1 .pic .pic1 {
+        right: 240px;
+        bottom: 600px;
+        z-index: 2;
+        transition: all 2s ease;
+        width: 98px;
+    }
+    .aura1 .img .pic2 {
+        width: 100px;
+        right: 200px;
+        bottom: 540px;
+        z-index: 1;
+        transition: all 2s ease;
+    }
+    .aura1 .pic .pic3 {
+        right: 124px;
+        bottom: 443px;
+        z-index: 3;
+        width: 178px;
+        transition: all 2s ease;
+    }
+    .aura1.animate .pic .pic1 {
+        right: 238px;
+        bottom: 616px;
+        width: 100px;
+    }
+    .aura1.animate .img .pic2 {
+        width: 100px;
+        right: 178px;
+        bottom: 529px;
+    }
+    
+    .aura1.animate .pic .pic3 {
+        right: 35px;
+        bottom: 334px;
+        z-index: 3;
+        width: 190px;
+    }
+    .aura1 .img {
+        top:200px;
+    }
+    .aura2 .img {
+        width: 200px;
+        margin-top: -128px;
+        margin-left: 76px;
+    }
+    .img img {
+        width:100%;
+    }
+    .aura2 .text {
+        margin-top: 54px;
+    }
+    .aura3 .w1184 {
+        position: relative;
+        padding:0;
+    }
+    .aura3 .text {
+        margin-top: 0;
+        width:100%;
+    }
+    .aura3 .text h3 {
+        text-align: center;
+        margin-bottom: 120px;
+    }
+    .aura3 p {
+        padding:0 34px;
+    }
+    .aura3 .text h4 {
+        border-top: 1px solid #bfbfbf;
+        padding-top: 30px;
+        font-size:22px;
+        margin-top: 106px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+    .aura3 .img {
+        position: absolute;
+        margin-right: 0;
+        right: 44px;
+        top: 78px;
+        width: 132px;
+    }
+    .aura3 .text ul li {
+        position: relative;
+        float: left;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 20px;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    .aura-slide-btn {
+        padding-left: 36px;
+    }
+    .aura3 .text ul li span { 
+        left: 2px;
+        top: 2px; 
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+    }
+    .aura3 .text ul li.cur::before, .aura3 .text ul li:hover::before {
+        top: 0px;
+        left: 0px;
+        width: 63px;
+        height: 63px;
+    }
+    .aura3 .text ul li.l2 span {
+        background-position: -89px 0px;
+    }
+    .aura3 .text ul li.l3 span {
+        background-position: -179px -1px;
+    }
+    .aura3 .text ul li.l4 span {
+        background-position: -270px -1px;
+    }
+}
+@media screen and (max-width: 320px) { 
+    .h900 {
+        height: 650px;
+    }
+    .aura .text h3{
+        font-size: 20px;
+        margin-bottom: 16px;
+        line-height: 34px;
+    }
+    .aura1, .aura3 {
+        padding-top: 40px;
+    }
+    .aura2 .text {
+        margin-top: 40px;
+    }
+    .aura .text p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .aura .text p::before{
+        top:8px;
+    }
+    .aura1 .pic .pic1 {
+        right: 200px;
+        bottom: 690px;
+        z-index: 2;
+        transition: all 2s ease;
+        width: 80px;
+    }
+    .aura1 .img .pic2 {
+        width: 80px;
+        right: 170px;
+        bottom: 646px;
+        z-index: 1;
+        transition: all 2s ease;
+    }
+    .aura1 .pic .pic3 {
+        right: 106px;
+        bottom: 562px;
+        z-index: 3;
+        width: 144px;
+        transition: all 2s ease;
+    }
+    .aura1.animate .pic .pic1 {
+        right: 200px;
+        bottom: 680px;
+        width: 80px;
+    }
+    .aura1.animate .img .pic2 {
+        width: 80px;
+        right: 150px;
+        bottom: 610px;
+    }
+    .aura1.animate .pic .pic3 {
+        right: 28px;
+        bottom: 447px;
+        z-index: 3;
+        width: 160px;
+    }
+    .aura2 .img {
+        width: 170px;
+        margin-top: -76px;
+        margin-left: 54px;
+    }
+    .aura3 .text h3 {
+        font-size: 20px;
+        margin-bottom: 56px;
+        line-height: 34px;
+    }
+    .aura3 .img {
+        position: absolute;
+        margin-right: 0;
+        right: 44px;
+        top: 47px;
+        width: 92px;
+    }
+    .aura3 .text h4 {
+        border-top: 1px solid #bfbfbf;
+        padding-top: 30px;
+        font-size: 18px;
+        margin-top: 56px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .aura-slide-btn {
+        padding-left: 24px;
+    }
+    .aura3 .text ul li{
+        width: 50px;
+        height: 50px;
+    }
+    .aura3 .text ul li.cur::before, .aura3 .text ul li:hover::before {
+        top: 0px;
+        left: 0px;
+        width: 53px;
+        height: 53px;
+    }
+    .aura3 .text ul li span {
+        left: 2px;
+        top: 2px;
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+    }
+    .aura3 .text ul li.l2 span {
+        background-position: -74px 0px;
+    }
+    .aura3 .text ul li.l3 span {
+        background-position: -149px 0px;
+    }
+    .aura3 .text ul li.l4 span {
+        background-position: -225px 0px;
+    }
+}

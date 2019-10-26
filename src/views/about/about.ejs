@@ -1,0 +1,96 @@
+<div class="content">
+    <div class="content-banner">
+        <div class="w1200">
+            <div class="content-title mission">
+                <h4>Our Mission</h4>
+                <p>Advanced vaporization technology to make better life at your fingertips</p>
+            </div>
+            <div class="our-vision">
+                <div class="content">
+                    <div class="content-title">
+                        <h4>Our Vision</h4>
+                        <p>Enrich and improve lives for all</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="our-story">
+        <div class="w1200 clearfix">
+            <div class="img fl">
+                <img class="pc" src="<%= require('assets/images/about/our-story.jpg') %>" alt="Our Story"/>
+                <img class="m" src="<%= require('assets/images/about/our-story-m.jpg') %>" alt="Our Story"/>
+            </div>
+            <div class="text fr">
+                <div class="content-title">
+                    <h4>Our Story</h4>
+                    <p>Dopex, specializes in research & development of leading vaporization technology and heating element, committing itself to providing professional vaporization equipment of high quality in medical and wellness industry. Innovation drives us to move towards industry-leading technology frontier and Dopex always adheres to evolving better products. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="solve">
+        <h4>WE CARE, WE <span>SOLVE AND WE CURE.</span><br/><span>DOPEX, WITH YOU EVERY</span> STEP OF THE WAY.</h4>
+    </div>
+    <div class="contact-us">
+        <div class="w1200 clearfix">
+            <h4 class="title-h4 m">CONTACT US</h4>
+            <div class="map fr" id="container"></div>
+            <div class="message-box fl">
+                <h4>Leave your contact information here, and we’ll reply you as soon as possible.</h4>
+                <div class="message-content">
+                    <form id="mesForm" class="mes-form" action="/api/addMessage" method="post" enctype="multipart/form-data" autocomplete="off">
+                        <ul class="clearfix">
+                            <li>
+                                <label>Your Name(required)</label>
+                                <div class="mes-input">
+                                    <input type="text" name="name" placeholder="Please enter a Name" datatype="s2-20"  nullmsg="The name cannot be empty" errormsg="Please enter the correct name" />
+                                </div>
+                                <div class="Validform_checktip"></div>
+                            </li>
+                            <li>
+                                <label>Your Email Address(required)</label>
+                                <div class="mes-input">
+                                    <input type="text" name="email" placeholder="Please enter a Email" datatype="email"  nullmsg="The email cannot be empty" errormsg="Please enter the correct email"/>
+                                </div>
+                                <div class="Validform_checktip"></div>
+                            </li>
+                            <li>
+                                <label>Subject</span>
+                                <div class="mes-input">
+                                    <select name="subject" nullmsg="The subject cannot be empty" errormsg="Please enter the correct subject">
+                                        <option value="">SUBJECT</option>
+                                        <option value="Business inquiries">Business inquiries</option>
+                                        <option value="Non-Business inquiries(Consumers/End Users)">Non-Business inquiries(Consumers/End Users)</option>
+                                    </select>
+                                </div>
+                                <div class="Validform_checktip"></div>
+                            </li>
+                            <li>
+                                <label>Your Message</span>
+                                <div class="mes-input">
+                                    <textarea name="message" placeholder="MESSAGE（120 length）......." maxlength="120"  nullmsg="The message cannot be empty" errormsg="Please enter the message content"></textarea>
+                                </div>
+                                <div class="Validform_checktip"></div>
+                            </li>
+                            <li class="w100 f-btn clearfix">
+                                <a href="javascript:;" class="submit btn" id="mesSubmit">Send</a>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-full" id="message">
+    <div class="message-layer">
+        <div id="messagePop" class="message-pop">
+            <img src="<%= require('assets/images/success.png') %>"/>
+            <h3></h3>
+            <p></p>
+        </div>
+        <a id="mesCancel" href="javascript:;" class="mes-cancel">×</a>
+    </div>
+</div>

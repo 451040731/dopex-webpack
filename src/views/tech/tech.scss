@@ -1,0 +1,137 @@
+.content {
+    width: 100%;
+    overflow: hidden;
+}
+.tech_title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #212121;
+    line-height: 80px;
+}
+.tech_txt {
+    font-size: 24px;
+    color:#494f54;
+    line-height: 36px;
+}
+.tech1 {
+    
+    background: url("../../common/assets/images/tech/tech1_bg.jpg") no-repeat top center;
+}
+.tech1 .w1100 {
+    height: 950px;
+    padding-top: 154px;
+    background: url("../../common/assets/images/tech/tech1_img.png") no-repeat 250px 0;
+}
+.tech_cont1 .tech_txt {
+    margin-top: 52px;
+}
+.tech_cont2 {
+    float:right;
+    width:512px;
+    margin-top: 172px;
+}
+.tech_cont2 .tech_txt{
+    margin-top: 52px;
+}
+.tech3 .w1100{
+    margin-top: 186px;
+    width: 1174px;
+    height: 430px;
+}
+.tech3 .tech_txt{
+    margin-top: 38px;
+}
+.tech5 .w1100{
+    height: 550px;
+    padding-top: 230px;
+    padding-left: 164px;
+}
+.tech5 .tech_txt{
+    margin-top:40px;
+}
+
+@media screen and (max-width: 768px) { 
+    .tech_title {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .w1100 {
+        width:100%;
+        padding: 0 30px;
+    }
+    .tech1 {
+        background-size: cover;
+    }
+    .tech_cont1 {
+        width:100%;
+    }
+    .tech_txt {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .tech1 .w1100 {
+        background-position: top right;
+        background-size: 290px;
+    }
+    .tech_title span {
+        display: block;
+    }
+    .tech1 .tech_txt {
+        margin-top: 20px;
+    }
+    .tech_cont2 {
+        float: left;
+        width: initial;
+        margin-top: 264px;
+    }
+    .tech3 .w1100 {
+        width:100%;
+        margin-top: 100px;
+        height: 200px;
+        position: relative;
+        z-index: 20;
+    }
+    .tech3 .tech_txt {
+        margin-top: 20px;
+    }
+    .tech4 {
+        margin-left: 100px;
+    transform: rotate(120deg);
+    }
+    .tech4 img {
+        width: 200%;
+    }
+    .tech5 .w1100 {
+        position: relative;
+        height: 580px;
+        padding-top: 290px;
+        padding-left: 94px;
+        z-index: 20;
+    }
+    .tech5 .tech_txt {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 375px) { 
+    .w1100 {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .tech_title {
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .tech1 .w1100 {
+        padding-top: 120px;
+        background-size: 260px;
+        height: 880px;
+    }
+    .tech_cont2 {
+        margin-top: 218px;
+    }
+    .tech5 .w1100 {
+        padding-top: 262px;
+        height: 540px;
+    }
+}
